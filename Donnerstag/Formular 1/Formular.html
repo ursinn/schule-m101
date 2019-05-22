@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>erstes Formular</title>
+    <style type="text/css">
+      body {
+        background-image: url('back.jpg');
+      }
+      table {
+        border: 2px solid #003366;
+        border-collapse: collapse;
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      td {
+        border: 2px solid #003366;
+        padding: 7px;
+        font-size: 120%;
+        color: #ffcc00;
+      }
+      tr.t1 {
+        background-color: #3366cc;
+      }
+      tr.t2 {
+        background-color: #6699ff;
+      }
+      td.t1 {
+        width: 150px;
+      }
+      td.t2 {
+        width: 300px;
+      }
+      h1 {
+        text-align: center;
+        font-family: Verdana, Tahoma, sans-serif;
+        color: #ffcc00;
+      }
+      input[type=number] {
+        width: 60px;
+      }
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="#">
+      <table>
+        <tr class="t1">
+          <td colspan="2"><h1>Kontaktformular</h1></td>
+        </tr>
+      	<tr class="t2">
+          <td class="t1">Name*</td>
+          <td class="t2"><input type="text" name="name" size="30" required></td>
+        </tr>
+        <tr class="t1">
+          <td class="t1">Vorname*</td>
+      		<td class="t2"><input type="text" name="vorname" size="30" required></td>
+        </tr>
+        <tr class="t2">
+      		<td class="t1">Strasse* / Nr*</td>
+      		<td class="t2"><input type="text" name="stasse" size="30" required> <input type="number" name="nr" required></td>
+        </tr>
+        <tr class="t1">
+      		<td class="t1">PLZ*</td>
+      		<td class="t2"><input type="number" name="plz" max="9999" min="1000" required></td>
+        </tr>
+        <tr class="t2">
+      		<td class="t1">Ort*</td>
+      		<td class="t2"><input type="text" name="ort" size="30" required></td>
+        </tr>
+        <tr class="t1">
+      		<td class="t1">Telefon</td>
+      		<td class="t2"><input type="tel" name="tel" size="30"></td>
+        </tr>
+        <tr class="t2">
+      		<td class="t1">E-Mail*</td>
+      		<td class="t2"><input type="email" name="mail" size="30" required></td>
+        </tr>
+        <tr class="t1">
+          <td class="t1">Webadresse</td>
+          <td class="t2"><input type="url" name="" value="http://www." size="30"></td>
+        </tr>
+        <tr class="t2">
+          <td class="t1">Kommentar</td>
+          <td class="t2"><textarea name="name" rows="2" cols="25"></textarea></td>
+        </tr>
+        <tr class="t1">
+          <td class="t1"><input type="submit"></td>
+          <td class="t2"><input type="reset" value="Loeschen"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

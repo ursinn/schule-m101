@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formular</title>
+		<link rel="stylesheet" href="style1.css" type="text/css">
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				background-color: #AAAAFF;
+			}
+			td {
+				padding: 8px;
+				border: 2px solid #000033;
+			}
+			input[type=number] {
+				width: 60px;
+			}
+			input[type=submit], input[type=reset] {
+				background-color: #000033;
+				color: #AAAAFF;
+			}
+			textarea {
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<p class="t1">
+				<span><a href="seite1.htm">&lt;&lt;</a></span>
+				<span><a href="seite5.htm">&lt;</a></span>
+				<span><a href="#">...</a></span>
+				<span><a href="seite4.htm">4</a></span>
+				<span><a href="seite5.htm">5</a></span>
+				<span><a href="seite6.htm">6</a></span>
+				<span><a href="#">...</a></span>
+				<span><a href="seite6.htm">&gt;</a></span>
+				<span><a href="seite6.htm">&gt;&gt;</a></span>
+			</p>
+		</nav>
+		<main>
+
+			<h1>Zeitschriften-Abonnement</h1>
+
+			<form action="#" method="post">
+				<table>
+					<tr>
+						<td>Vorname:*</td>
+						<td colspan="2"><input type="text" name="vorname" size="30" required></td>
+					</tr>
+					<tr>
+						<td>Name:*</td>
+						<td colspan="2"><input type="text" name="nachname" size="30" required></td>
+					</tr>
+					<tr>
+						<td>Strasse / Nr.:*</td>
+						<td colspan="2"><input type="text" name="strasse" size="30" required> <input type="number" name="nummer" min="1" max="999" required></td>
+					</tr>
+					<tr>
+						<td>PLZ / Ort:*</td>
+						<td colspan="2"><input type="number" name="plz" min="1000" max="9999" required> <input type="text" name="ort" size="30" required></td>
+					</tr>
+					<tr>
+						<td>Geburtsdatum:</td>
+						<td colspan="2">
+							Tag: <input type="number" name="tag" min="1" max="31">
+							Monat: <input type="text" name"monat" size="15" pattern="Januar|Februar|M&auml;rz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember" title="Geben sie den Namen eines Monats ein">
+							Jahr: <input type="number" name="jahr" min="1920" max="2015">
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Kreditkarte:</td>
+						<td><input type="radio" name="kredit" value="master">MasterCard</td>
+						<td><input type="radio" name="kredit" value="visa">VisaCard</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="kredit" value="american">American Express</td>
+						<td><input type="radio" name="kredit" value="post">PostFinance</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Zeitschrift:</td>
+						<td colspan="2"><input type="checkbox" name="zeitschrift" value="austalien">Australien Magazin (12 x CHF 8.70)</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" name="zeitschrift" value="merian">Merian Australien (1 x CHF 14.95)</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" name="zeitschrift" value="austreise">Die AustralienReise (6 x CHF 12.70)</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" name="zeitschrift" value="draco">DRACO (4 x CHF 19.90)</td>
+					</tr>
+					<tr>
+						<td>Kommentar:</td>
+						<td colspan="2"><textarea name="kommentar" rows="3" cols="25"></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="bestellen"></td>
+						<td></td>
+						<td><input type="reset" value="l&ouml;schen"></td>
+					</tr>
+				</table>
+			</form>
+		</main>
+		<footer>
+			<p class="t1">
+				<span><a href="seite1.htm">&lt;&lt;</a></span>
+				<span><a href="seite5.htm">&lt;</a></span>
+				<span><a href="#">...</a></span>
+				<span><a href="seite4.htm">4</a></span>
+				<span><a href="seite5.htm">5</a></span>
+				<span><a href="seite6.htm">6</a></span>
+				<span><a href="#">...</a></span>
+				<span><a href="seite6.htm">&gt;</a></span>
+				<span><a href="seite6.htm">&gt;&gt;</a></span>
+			</p>
+		</footer>
+	</body>
+</html>

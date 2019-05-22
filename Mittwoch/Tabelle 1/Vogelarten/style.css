@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(to bottom right, green, #ccc, #ddd);
+}
+
+main {
+  width: 900px;
+  background-color: yellow;
+  margin-left: 350px;
+  padding: 5px;
+  border: 1px solid blue;
+  letter-spacing: 0.04em;
+}
+
+h1, h2 {
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  float: left;
+  margin: -17px 5px 5px 5px;
+  padding-bottom: 10px;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #555555;
+}
+
+a:hover {
+  color: green;
+  border: green 1px solid;
+}

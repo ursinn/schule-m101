@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(to bottom right, green, yellow, red);
+}
+nav {
+  float: left;
+  width: 335px;
+  background-color: #cccccc;
+  margin: 10px;
+  padding: auto;
+  border: dashed 1px purple;
+}
+
+main {
+  width: 900px;
+  background-color: yellow;
+  margin-left: 350px;
+  padding: 5px;
+  border: 1px solid blue;
+  letter-spacing: 0.04em;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2 {
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+h3 {
+  text-align: center;
+}
+
+.right {
+  float: right;
+  padding: 5px;
+}
+
+.left {
+  float: left;
+  padding: 5px;
+}
+
+figure > a:hover {
+  border: none;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: bold;
+  background-color: #dddddd;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: #555555;
+}
+a:hover {
+  color: green;
+  border: green 1px solid;
+}

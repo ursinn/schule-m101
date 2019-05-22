@@ -1,0 +1,40 @@
+table {
+  background-color: #ffaa55;
+  margin-left: 250px;
+  margin-top: 50px;
+  border: none;
+  padding: 0px;
+}
+td {
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+  vertical-align: top;
+  padding: 8px;
+}
+h1 {
+  font-size: 130%;
+  text-decoration: underline;
+}
+
+td.img {
+  background-image: url('drogen.jpg');
+  width: 90px;
+}
+td.t2 {
+  font-weight: bold;
+  width: 160px;
+}
+td.t3 {
+  width: 290px;
+}
+input[type=number]  {
+  width: 60px;
+}
+s {
+  background-color: #ffccaa;
+  color: #552200;
+  font-size: 90%;
+}
+textarea {
+  resize: none;
+}
